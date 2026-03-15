@@ -1,4 +1,4 @@
-## 4. Terraform Installation
+## Terraform Installation
 
 ### Step 1 - Install required tools
 ```bash
