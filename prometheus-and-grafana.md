@@ -93,7 +93,7 @@ rate(http_requests_total[5m])
 
 
 
-## 3. Grafana Installation
+## Grafana Installation
 
 ### What is Grafana?
 Grafana is a visualization tool. It connects to Prometheus (or other data sources) and creates beautiful, interactive dashboards from the metrics data. Prometheus stores data, Grafana shows it as graphs and charts.
