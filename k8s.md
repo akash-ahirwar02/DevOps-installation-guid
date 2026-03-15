@@ -131,3 +131,9 @@ kubeadm token create --print-join-command
 > **Why?** kubeadm tokens expire after 24 hours for security reasons. This creates a fresh token and prints the complete join command.
 
 ---
+
+### Verify
+```bash
+kubectl get nodes
+kubectl get pods -n kube-system
+```
