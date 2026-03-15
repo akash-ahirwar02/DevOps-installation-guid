@@ -1,4 +1,4 @@
-Kubernetes - kubeadm Installation
+## Kubernetes - kubeadm Installation
 
 > Run these steps on ALL nodes (both Master and Worker) unless mentioned otherwise.
 
