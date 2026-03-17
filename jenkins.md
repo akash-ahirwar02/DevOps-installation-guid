@@ -12,12 +12,10 @@ java -version
 
 ### Step 2 - Add Jenkins Repository
 ```bash
-sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
-  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+sudo gpg --keyserver keyserver.ubuntu.com --recv-keys 7198F4B714ABFC68
 
-echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
-  https://pkg.jenkins.io/debian-stable binary/" | \
-  sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo gpg --export 7198F4B714ABFC68 | sudo tee /usr/share/keyrings/jenkins-keyring.gpg > /dev/null
+
 ```
 > **Why?** Jenkins is not available in Ubuntu's default repository. We add Jenkins' official repo so apt can download it directly from Jenkins.
 
